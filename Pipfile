@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+nltk = "==3.6.5"
+spacy = "==3.7.2"
+scikit-learn = "==1.3.2"
+bert-extractive-summarizer = "==0.10.1"
+googletrans = "==4.0.0-rc1"
+torch = "==2.3.0"
+beautifulsoup4 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

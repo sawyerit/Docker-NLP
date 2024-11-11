@@ -32,19 +32,19 @@ List any prerequisites or dependencies that need to be installed before can use 
 
 ## Usage with Docker :
    
-1. Pull Docker image
+1. Build Docker image
    ```sh
-   docker pull harshmanvar/basic-nlp:v1
+   docker build -t basic-nlp:my_nlp .
    ```
 
 2. Run Docker image
    ```sh
-   docker run -it harshmanvar/basic-nlp:v1 <file-name.py>
+   docker run -it basic-nlp:my_nlp <file-name.py>
    ```
 -  **Sentiment Analysis Example** :
 
    ```sh
-   docker run -it harshmanvar/basic-nlp:v1 01_sentiment_analysis.py
+   docker run -t basic-nlp:my_nlp 01_sentiment_analysis.py
    ```
 
    Enter your input
@@ -169,3 +169,8 @@ List any prerequisites or dependencies that need to be installed before can use 
    Original Text: Hello, how are you doing?
    Translated Text: Bonjour comment allez-vous?
    ```
+
+
+### todo:
+- Add flask api to container
+- Embed model in container so it doesn't need to be downloaded every time
